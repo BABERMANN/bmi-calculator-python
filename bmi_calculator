@@ -1,0 +1,25 @@
+weight = float(input("Enter your weight (kg): "))
+height = float(input("Enter your height (m): "))
+
+
+bmi = weight / (height ** 2)
+
+
+if bmi < 18.5:
+    classification = "Underweight"
+elif bmi < 25:
+    classification = "Normal weight"
+elif bmi < 30:
+    classification = "Overweight"
+elif bmi < 35:
+    classification = "Obesity class I"
+elif bmi < 40:
+    classification = "Obesity class II"
+else:
+    classification = "Obesity class III"
+
+
+print("\nClassification:")
+print("------------------------")
+print(f"Your BMI is: {bmi:.1f}")
+print(f"You are classified as: {classification}"
