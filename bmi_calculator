@@ -1,13 +1,13 @@
-# Ask the user for their weight in kilograms
+# Prompt the user to enter their weight in kilograms
 weight = float(input("Enter your weight (kg): "))
 
-# Ask the user for their height in meters
+# Prompt the user to enter their height in meters
 height = float(input("Enter your height (m): "))
 
 # Calculate the Body Mass Index (BMI)
 bmi = weight / (height ** 2)
 
-# Determine the classification based on the BMI value
+# Determine the classification based on BMI value
 if bmi < 18.5:
     classification = "Underweight"
 elif bmi < 25:
@@ -15,14 +15,21 @@ elif bmi < 25:
 elif bmi < 30:
     classification = "Overweight"
 elif bmi < 35:
-    classification = "Obesity class I"
+    classification = "Obesity Class I"
 elif bmi < 40:
-    classification = "Obesity class II"
+    classification = "Obesity Class II"
 else:
-    classification = "Obesity class III"
+    classification = "Obesity Class III"
 
-# Display the result
-print("\nClassification:")
+# Calculate the healthy weight range for the given height
+min_healthy_weight = 18.5 * (height ** 2)
+max_healthy_weight = 24.9 * (height ** 2)
+
+# Display the results
+print("\n📊 BMI Classification")
 print("------------------------")
-print(f"Your BMI is: {bmi:.1f}")  # Shows BMI rounded to 1 decimal place
+print(f"Your BMI is: {bmi:.1f}")
 print(f"You are classified as: {classification}")
+
+print("\nHealthy weight range for your height:")
+print(f"Between {min_healthy_weight:.1f} kg and {max_healthy_weight:.1f} kg")
