@@ -26,7 +26,7 @@ min_healthy_weight = 18.5 * (height ** 2)
 max_healthy_weight = 24.9 * (height ** 2)
 
 # Display the results
-print("\n📊 BMI Classification")
+print("\nBMI Classification")
 print("------------------------")
 print(f"Your BMI is: {bmi:.1f}")
 print(f"You are classified as: {classification}")
