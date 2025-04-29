@@ -6,6 +6,9 @@
 The user enters their weight and height, and the program calculates the BMI and returns a classification based on the **World Health Organization (WHO)** standards.  
 O usuário informa seu peso e altura, e o programa calcula o IMC e retorna a classificação com base nos padrões da **Organização Mundial da Saúde (OMS)**.
 
+Additionally, the program displays the **healthy weight range** based on the user's height.  
+Além disso, o programa mostra a **faixa de peso saudável** com base na altura informada.
+
 ---
 
 ## 📌 What is BMI? | O que é o IMC?
@@ -17,6 +20,13 @@ It helps determine if the person is underweight, at a healthy weight, or overwei
 Ajuda a identificar se a pessoa está abaixo, dentro ou acima do peso ideal.
 
 **Formula | Fórmula:**
+```
+BMI = weight / (height × height)
+IMC = peso / (altura × altura)
+```
+
+---
+
 ## 🧠 Classification Table | Tabela de Classificação
 
 | BMI / IMC         | Classification (EN)     | Classificação (PT)     |
@@ -30,14 +40,19 @@ Ajuda a identificar se a pessoa está abaixo, dentro ou acima do peso ideal.
 
 ---
 
-## 🚀 How to Run | Como Executar
-
-1. Make sure you have **Python 3** installed.  
-   Certifique-se de ter o **Python 3** instalado.
-2. Clone this repository or download the file.  
-   Clone este repositório ou baixe o arquivo.
-3. Open the terminal and run:  
-   Abra o terminal e execute:
-
-```bash
 python bmi_calculator.py
+
+## ✅ Example Output | Exemplo de Saída
+
+```
+Enter your weight (kg): 70
+Enter your height (m): 1.75
+
+📊 BMI Classification
+------------------------
+Your BMI is: 22.9
+You are classified as: Normal weight
+
+✅ Healthy weight range for your height:
+Between 56.6 kg and 76.2 kg
+```
